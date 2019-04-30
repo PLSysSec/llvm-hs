@@ -29,3 +29,6 @@ foreign import ccall unsafe "LLVMABISizeOfType" getTypeAllocSize ::
 
 foreign import ccall unsafe "LLVMOffsetOfElement" getOffsetOfElement ::
   Ptr DataLayout -> Ptr Type -> CUInt -> IO Word64
+
+printStuff :: IO ()
+printStuff = print "Hello"
